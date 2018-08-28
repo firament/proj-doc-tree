@@ -1,0 +1,76 @@
+- README.md
+- 01-Notes
+	- *general working notes*
+	- _local-notes.md
+	- README.md
+
+- 10-Init
+	- README.md
+	- *Pre launch documentation*
+	- 110-Client-Docs
+		- README.md
+	- 120-Features
+		- README.md
+	- 130-Scope
+		- README.md
+	- 140-Charter
+		- README.md
+- 20-Plan
+	- README.md
+	- *Should have a folder for each section of PMP*
+	- 210-Infrastructure
+		- README.md
+	- 220-Schedule
+		- README.md
+	- 230-Resources
+		- README.md
+	- 240-CRs
+		- README.md
+- 30-Design
+	- README.md
+	- *Research and Design documents*
+	- *Includes research on libraries and frameworks, with finalized list*
+	- 310-DB
+		- README.md
+	- 320-Server
+		- README.md
+	- 330-UI-Web
+		- README.md
+	- 340-UI-App
+		- README.md
+	- 350-Diagrams
+		- README.md
+	- 360-Artefacts
+		- README.md
+	- 370-App-Model.vpp
+		- README.md
+- 40-Develop
+	- README.md
+	- 410-GuidelinesAndStandards
+		- README.md
+	- 420-Process
+		- README.md
+	- 430-Reviews
+- 50-QA
+	- README.md
+	- 510-PlansAndCases
+		- README.md
+	- 520-Data
+		- README.md
+	- 530-Results
+		- README.md
+	- 540-Automation
+- 60-Release
+	- README.md
+	- 610-ReleaseNotes
+		- README.md
+	- 620-Changelog.md
+		- README.md
+- 70-Track
+	- README.md
+	- 70-StatusUpdates
+		- README.md
+	- 70-IssueLogs
+		- README.md
+- 80-Miscellaneous
+	- *General bucket for documents that do not fit into any other bucket.*
