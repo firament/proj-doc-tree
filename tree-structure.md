@@ -4,73 +4,85 @@
 	- _local-notes.md
 	- README.md
 
-- 10-Init
+- 10-Init/
 	- README.md
 	- *Pre launch documentation*
-	- 110-Client-Docs
+	- 110-Client-Docs/
 		- README.md
-	- 120-Features
+	- 120-Features/
 		- README.md
-	- 130-Scope
+	- 130-Scope/
 		- README.md
 	- 140-Charter
 		- README.md
-- 20-Plan
+- 20-Plan/
 	- README.md
 	- *Should have a folder for each section of PMP*
-	- 210-Infrastructure
+	- 210-Infrastructure/
 		- README.md
-	- 220-Schedule
+	- 220-Schedule/
 		- README.md
-	- 230-Resources
+	- 230-Resources/
 		- README.md
-	- 240-CRs
+	- 240-CRs/
 		- README.md
-- 30-Design
+		- 01-CR-log.md
+- 30-Design/
 	- README.md
 	- *Research and Design documents*
 	- *Includes research on libraries and frameworks, with finalized list*
-	- 310-DB
+	- 310-DB/
 		- README.md
-	- 320-Server
+		- db-domains.md
+		- dd-dropdowns.md
+		- db-ref-notes.md
+		- 3110-SQL/
+			- README.md
+			- db-10-init.sql
+			- db-20-create.sql
+			- db-21-create-views.sql
+			- db-48-drop-views.sql
+			- db-49-drop.sql
+	- 320-Server/
 		- README.md
-	- 330-UI-Web
+	- 330-UI-Web/
 		- README.md
-	- 340-UI-App
+	- 340-UI-App/
 		- README.md
-	- 350-Diagrams
+	- 380-Diagrams/
 		- README.md
-	- 360-Artefacts
+	- 380-Artefacts/
 		- README.md
 	- 370-App-Model.vpp
-		- README.md
-- 40-Develop
+- 40-Develop/
 	- README.md
-	- 410-GuidelinesAndStandards
+	- 410-GuidelinesAndStandards/
 		- README.md
-	- 420-Process
+	- 420-Process/
 		- README.md
-	- 430-Reviews
-- 50-QA
+	- 430-Reviews/
+		- README.md
+- 50-QA/
 	- README.md
-	- 510-PlansAndCases
+	- 510-PlansAndCases/
 		- README.md
-	- 520-Data
+	- 520-Data/
 		- README.md
-	- 530-Results
+	- 530-Results/
 		- README.md
-	- 540-Automation
-- 60-Release
+	- 540-Automation/
+		- README.md
+- 60-Release/
 	- README.md
-	- 610-ReleaseNotes
+	- 610-ReleaseNotes/
 		- README.md
 	- 620-Changelog.md
-		- README.md
-- 70-Track
+- 70-Track/
 	- README.md
-	- 70-StatusUpdates
+	- 70-StatusUpdates/
 		- README.md
-	- 70-IssueLogs
+	- 70-IssueLogs/
 		- README.md
-- 80-Miscellaneous
+- 80-Miscellaneous/
+	- README.md
 	- *General bucket for documents that do not fit into any other bucket.*

@@ -21,11 +21,12 @@ MakeEmptyTree(){
 	mkdir -vp 20-Plan/240-CRs;
 	mkdir -vp 30-Design;
 	mkdir -vp 30-Design/310-DB;
+	mkdir -vp 30-Design/310-DB/3110-SQL;
 	mkdir -vp 30-Design/320-Server;
 	mkdir -vp 30-Design/330-UI-Web;
 	mkdir -vp 30-Design/340-UI-App;
-	mkdir -vp 30-Design/350-Diagrams;
-	mkdir -vp 30-Design/360-Artefacts;
+	mkdir -vp 30-Design/380-Artefacts;
+	mkdir -vp 30-Design/380-Diagrams;
 	mkdir -vp 40-Develop;
 	mkdir -vp 40-Develop/410-GuidelinesAndStandards;
 	mkdir -vp 40-Develop/420-Process;
@@ -60,13 +61,23 @@ MakeReadMeFiles (){
 	touch 20-Plan/220-Schedule/README.md;
 	touch 20-Plan/230-Resources/README.md;
 	touch 20-Plan/240-CRs/README.md;
+	touch 20-Plan/240-CRs/01-CR-log.md;
 	touch 30-Design/README.md;
 	touch 30-Design/310-DB/README.md;
+	touch 30-Design/310-DB/db-domains.md
+	touch 30-Design/310-DB/dd-dropdowns.md
+	touch 30-Design/310-DB/db-ref-notes.md
+	touch 30-Design/310-DB/3110-SQL/README.md
+	touch 30-Design/310-DB/3110-SQL/db-10-init.sql
+	touch 30-Design/310-DB/3110-SQL/db-20-create.sql
+	touch 30-Design/310-DB/3110-SQL/db-21-create-views.sql
+	touch 30-Design/310-DB/3110-SQL/db-48-drop-views.sql
+	touch 30-Design/310-DB/3110-SQL/db-49-drop.sql
 	touch 30-Design/320-Server/README.md;
 	touch 30-Design/330-UI-Web/README.md;
 	touch 30-Design/340-UI-App/README.md;
-	touch 30-Design/350-Diagrams/README.md;
-	touch 30-Design/360-Artefacts/README.md;
+	touch 30-Design/380-Artefacts/README.md;
+	touch 30-Design/380-Diagrams/README.md;
 	touch 30-Design/App-Model.vpp;
 	touch 40-Develop/README.md;
 	touch 40-Develop/410-GuidelinesAndStandards/README.md;
