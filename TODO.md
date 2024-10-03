@@ -1,6 +1,12 @@
 ## TODO:
 - [ ] Fill placeholder notes into files
-- [ ] Move to seperate repository
+- [ ] Revise bootstrap strategy
+	- [ ] Which one?
+		- [ ] Fill in default content in readme files
+		- [ ] Maintain in Contents
+	- [ ] Update bootstrap script to copy over content files
+	- [ ] Add Script to copy over structure from SampleTree
+- [ ] Move to seperate repository (why?)
 
 
 ## Change Log:

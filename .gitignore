@@ -1,7 +1,19 @@
+# Dont exclude these
+!**/.keep
+
 # Project files
 /01-Notes/_local-notes.md
-/80-Miscellaneous
+/90-Miscellaneous
+
+# Working files
 *-Model.vpp.lck
 *-Model.vpp.bak*
 *-Model.vpp.lbak-*
+bootstrap-*-tree.log
+bootstrap-*-files.log
+
+# Adjust to actual path
+**/3990-Working/Copies/*
+**/3990-Working/Exported/*
+**/3990-Working/Generated/*
 

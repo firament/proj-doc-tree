@@ -7,7 +7,7 @@ Folder with templates and notes to bootstrap a documentation tree
 1. Add the following lines to `.gitignore` for excluding files
 ```
 /01-Notes/_local-notes.md
-/80-Miscellaneous
+/90-Miscellaneous
 *-Model.vpp.lck
 *-Model.vpp.bak*
 *-Model.vpp.lbak-*
