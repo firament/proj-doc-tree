@@ -63,6 +63,7 @@ def validate_directories(input_dir, output_dir):
         if not os.path.isdir(output_dir):
             errors.append(f"Output path '{output_dir}' is not a directory.")
         elif os.listdir(output_dir):
+            # Add test to confirm if any files exist in directory
             errors.append(f"Output directory '{output_dir}' is not empty.")
     else:
         try:

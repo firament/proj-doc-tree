@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Palette Elements</title>
+        <style>
+            /* Style for the entire container */
+            .row-container {
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                padding: 2px;
+            }
+
+            /* Style for each row */
+            .row {
+                display: flex;
+                align-items: center;
+                height: 50px;
+                /* All elements in a row will have the same height */
+                gap: 20px;
+            }
+
+            /* Style for the span */
+            .colored-span {
+                width: 250px;
+                height: 100%;
+                display: inline-block;
+                border-color: black;
+                border-width: 1px;
+                border-style: double;
+            }
+
+            /* Style for the text box */
+            input[type="text"] {
+                height: 100%;
+                width: 200px;
+                padding-left: 1%;
+                padding-right: 1%;
+            }
+
+        </style>
+    </head>
+
+    <body>
+
+        <div class="row-container">
+            <!-- Row 1 -->
+            <div class="row">
+                <input type="checkbox" id="checkbox1">
+                <span style="background-color: #FF5733;" class="colored-span"></span>
+                <input type="text" id="text1" placeholder="Enter text..." value="User ID">
+            </div>
+
+            <!-- Row 2 -->
+            <div class="row">
+                <input type="checkbox" id="checkbox2">
+                <span style="background-color: #33FF57;" class="colored-span"></span>
+                <input type="text" id="text2" placeholder="Enter text...">
+            </div>
+
+            <!-- Row 3 -->
+            <div class="row">
+                <input type="checkbox" id="checkbox3">
+                <span style="background-color: #3357FF;" class="colored-span"></span>
+                <input type="text" id="text3" placeholder="Enter text...">
+            </div>
+        </div>
+
+    </body>
+
+</html>

@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!-- TODO: Clean up styles -->
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>UML Colors v1.0</title>
+        <style>
+            body {
+                margin: 0;
+                padding: 0;
+                background-color: #f4f4f4;
+                height: 100vh;
+                /* Full viewport height */
+            }
+
+            /* Container for the two-column layout */
+            .container-header {
+                display: flex;
+                overflow: hidden;
+                background-color: #CCCCCC;
+            }
+
+            .container {
+                display: flex;
+                height: calc(100vh - 3.7rem);
+                overflow: hidden;
+                padding: 0.5rem;
+            }
+
+            .content-col {
+                flex: 1;
+                display: flex;
+                flex-direction: column;
+                margin: 0px 1rem;
+                padding: 0.2rem 1rem;
+                /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+                overflow-y: auto; /* Makes it scrollable vertically */
+                max-height: 100%; /* Ensures it fills the height of the container */            
+                gap: 20px;
+                }
+
+            /* Header style */
+            header {
+                height: 3em;
+                padding: 1px;
+                text-align: center;
+                display: none;
+                background-color: #CCCCCC;
+            }
+            h1, h2, h3, h4 {
+                margin: 0px;;
+                padding: 5px;
+                color: #BD6A40;
+                background-color: #CCCCCC;
+            }
+            pre{
+                margin: 0rem 0.25rem;
+            }
+
+            /* Footer style */
+            footer {
+                width: 100%;
+                text-align: center;
+                padding: 10px;
+                position: absolute;
+                bottom: 0;
+                color: white;
+                background-color: #BD6A40;
+            }
+
+            /* *************************** */
+            /* Style for the entire container */
+            .row-container {
+                display: flex;
+                flex-direction: column;
+                gap: 5px;
+                padding: 2px;
+            }
+
+            /* Style for each row */
+            .row {
+                display: flex;
+                align-items: center;
+                height: 1.0rem;
+                gap: 0.1rem;
+            }
+
+            /* Style for the span */
+            .colored-span {
+                width: 5rem;
+                height: 100%;
+                display: inline-block;
+                border: 1px solid #BBB;
+                border-radius: 5px;
+            }
+
+            /* Style for the text box */
+            .color-code-text {
+                height: 100%;
+                padding-left: 1%;
+                padding-right: 1%;
+            }
+
+            /* .usage-text { */
+            input[type="text"] {
+                height: 1.0rem;
+                width: 90%;
+                padding: 0px 1%;
+                border-color: #BBBBBB;
+                border-style: solid;
+                border-width: 0px 0px 1px 0px;
+                background-color: #f4f4f4;
+            }
+            input[type="checkbox"] {
+                height: 0.7rem;
+                width: 0.7rem;
+                margin: 2px 2px 2px 2px;
+                padding: 2px;
+            }
+        </style>
+    </head>
+
+    <body>
+
+        <header>
+            <h1>UML Design Palette Elements</h1>
+        </header>
+
+        <div class="container-header">
+            <div class="content-col"><h2>Pallete</h2></div>
+            <div class="content-col"><h2>Bright Shades</h2></div>
+            <div class="content-col"><h2>Muted Shades</h2></div>
+        </div>
+
+        <div class="container">
+
+            <div class="content-col">
+                <h3>Bright</h3>
+                <div class="row"> <input type="checkbox" id="checkbox2"><span style="background-color: #FF0000;" class="colored-span"></span><pre>#FF0000</pre><input type="text" placeholder="Enter text..."></div>
+                <div class="row"> <input type="checkbox" id="checkbox2"><span style="background-color: #00FFFF;" class="colored-span"></span><pre>#00FFFF</pre><input type="text" placeholder="Enter text..."></div>
+                <div class="row"> <input type="checkbox" id="checkbox2"><span style="background-color: #00FF00;" class="colored-span"></span><pre>#00FF00</pre><input type="text" placeholder="Enter text..."></div>
+                <div class="row"> <input type="checkbox" id="checkbox2"><span style="background-color: #FF00FF;" class="colored-span"></span><pre>#FF00FF</pre><input type="text" placeholder="Enter text..."></div>
+                <div class="row"> <input type="checkbox" id="checkbox2"><span style="background-color: #0000FF;" class="colored-span"></span><pre>#0000FF</pre><input type="text" placeholder="Enter text..."></div>
+                <div class="row"> <input type="checkbox" id="checkbox2"><span style="background-color: #FFFF00;" class="colored-span"></span><pre>#FFFF00</pre><input type="text" placeholder="Enter text..."></div>
+
+                <h3>Muted</h3>
+                <div class="row"> <input type="checkbox" id="checkbox2"><span style="background-color: #AA5555;" class="colored-span"></span><pre>#AA5555</pre><input type="text" placeholder="Enter text..."></div>
+                <div class="row"> <input type="checkbox" id="checkbox2"><span style="background-color: #55AAAA;" class="colored-span"></span><pre>#55AAAA</pre><input type="text" placeholder="Enter text..."></div>
+                <div class="row"> <input type="checkbox" id="checkbox2"><span style="background-color: #55AA55;" class="colored-span"></span><pre>#55AA55</pre><input type="text" placeholder="Enter text..."></div>
+                <div class="row"> <input type="checkbox" id="checkbox2"><span style="background-color: #AA55AA;" class="colored-span"></span><pre>#AA55AA</pre><input type="text" placeholder="Enter text..."></div>
+                <div class="row"> <input type="checkbox" id="checkbox2"><span style="background-color: #5555AA;" class="colored-span"></span><pre>#5555AA</pre><input type="text" placeholder="Enter text..."></div>
+                <div class="row"> <input type="checkbox" id="checkbox2"><span style="background-color: #AAAA55;" class="colored-span"></span><pre>#AAAA55</pre><input type="text" placeholder="Enter text..."></div>
+                
+                <h3>Greys</h3>
+                <div class='row' id='7F7F7F'><span style='background-color: #7F7F7F; padding: 0.25rem 3rem;' class='colored-span'></span><pre>#7F7F7F</pre></div>
+                <div class='row' id='2B2B2B'><input type='checkbox'><span style='background-color: #2B2B2B;' class='colored-span'></span><pre>#2B2B2B</pre><input type='text' placeholder='Enter text...'></div>
+                <div class='row' id='555555'><input type='checkbox'><span style='background-color: #555555;' class='colored-span'></span><pre>#555555</pre><input type='text' placeholder='Enter text...'></div>
+                <div class='row' id='7F7F7F'><input type='checkbox'><span style='background-color: #7F7F7F;' class='colored-span'></span><pre>#7F7F7F</pre><input type='text' placeholder='Enter text...'></div>
+                <div class='row' id='A9A9A9'><input type='checkbox'><span style='background-color: #A9A9A9;' class='colored-span'></span><pre>#A9A9A9</pre><input type='text' placeholder='Enter text...'></div>
+                <div class='row' id='D3D3D3'><input type='checkbox'><span style='background-color: #D3D3D3;' class='colored-span'></span><pre>#D3D3D3</pre><input type='text' placeholder='Enter text...'></div>
+
+                <h3>Other Samples</h3>
+                <div class="row"> <input type="checkbox" id="checkbox2"><span style="background-color: #A1367E;" class="colored-span"></span><pre>#A1367E</pre><input type="text" placeholder="Enter text..."></div>
+                <div class="row"> <input type="checkbox" id="checkbox2"><span style="background-color: #FFC0C0;" class="colored-span"></span><pre>#FFC0C0</pre><input type="text" placeholder="Enter text..."></div>
+                <div class="row"> <input type="checkbox" id="checkbox2"><span style="background-color: #DBEFF0;" class="colored-span"></span><pre>#DBEFF0</pre><input type="text" placeholder="Enter text..."></div>
+                <div class="row"> <input type="checkbox" id="checkbox2"><span style="background-color: #808000;" class="colored-span"></span><pre>#707000</pre><input type="text" placeholder="Enter text..."></div>
+
+            </div>
+
+            <div class="content-col">
+                <span></span> <!-- for a pinch of vertical spacing -->
+                <div class='row' id='FF0000'><span style='background-color: #FF0000; padding: 0.25rem 3rem;' class='colored-span'></span><pre>#FF0000</pre></div>
+                <div class='row' id='550000'><input type='checkbox'><span style='background-color: #550000;' class='colored-span'></span><pre>#550000</pre><input type='text' placeholder='Enter text...'></div>
+                <div class='row' id='AA0000'><input type='checkbox'><span style='background-color: #AA0000;' class='colored-span'></span><pre>#AA0000</pre><input type='text' placeholder='Enter text...'></div>
+                <div class='row' id='FF0000'><input type='checkbox'><span style='background-color: #FF0000;' class='colored-span'></span><pre>#FF0000</pre><input type='text' placeholder='Enter text...'></div>
+                <div class='row' id='FF5555'><input type='checkbox'><span style='background-color: #FF5555;' class='colored-span'></span><pre>#FF5555</pre><input type='text' placeholder='Enter text...'></div>
+                <div class='row' id='FFAAAA'><input type='checkbox'><span style='background-color: #FFAAAA;' class='colored-span'></span><pre>#FFAAAA</pre><input type='text' placeholder='Enter text...'></div>
+
+                <div class='row' id='00FFFF'><span style='background-color: #00FFFF; padding: 0.25rem 3rem;' class='colored-span'></span><pre>#00FFFF</pre></div>
+                <div class='row' id='005555'><input type='checkbox'><span style='background-color: #005555;' class='colored-span'></span><pre>#005555</pre><input type='text' placeholder='Enter text...'></div>
+                <div class='row' id='00AAAA'><input type='checkbox'><span style='background-color: #00AAAA;' class='colored-span'></span><pre>#00AAAA</pre><input type='text' placeholder='Enter text...'></div>
+                <div class='row' id='00FFFF'><input type='checkbox'><span style='background-color: #00FFFF;' class='colored-span'></span><pre>#00FFFF</pre><input type='text' placeholder='Enter text...'></div>
+                <div class='row' id='55FFFF'><input type='checkbox'><span style='background-color: #55FFFF;' class='colored-span'></span><pre>#55FFFF</pre><input type='text' placeholder='Enter text...'></div>
+                <div class='row' id='AAFFFF'><input type='checkbox'><span style='background-color: #AAFFFF;' class='colored-span'></span><pre>#AAFFFF</pre><input type='text' placeholder='Enter text...'></div>
+
+                <div class='row' id='00FF00'><span style='background-color: #00FF00; padding: 0.25rem 3rem;' class='colored-span'></span><pre>#00FF00</pre></div>
+                <div class='row' id='005500'><input type='checkbox'><span style='background-color: #005500;' class='colored-span'></span><pre>#005500</pre><input type='text' placeholder='Enter text...'></div>
+                <div class='row' id='00AA00'><input type='checkbox'><span style='background-color: #00AA00;' class='colored-span'></span><pre>#00AA00</pre><input type='text' placeholder='Enter text...'></div>
+                <div class='row' id='00FF00'><input type='checkbox'><span style='background-color: #00FF00;' class='colored-span'></span><pre>#00FF00</pre><input type='text' placeholder='Enter text...'></div>
+                <div class='row' id='55FF55'><input type='checkbox'><span style='background-color: #55FF55;' class='colored-span'></span><pre>#55FF55</pre><input type='text' placeholder='Enter text...'></div>
+                <div class='row' id='AAFFAA'><input type='checkbox'><span style='background-color: #AAFFAA;' class='colored-span'></span><pre>#AAFFAA</pre><input type='text' placeholder='Enter text...'></div>
+
+                <div class='row' id='FF00FF'><span style='background-color: #FF00FF; padding: 0.25rem 3rem;' class='colored-span'></span><pre>#FF00FF</pre></div>
+                <div class='row' id='550055'><input type='checkbox'><span style='background-color: #550055;' class='colored-span'></span><pre>#550055</pre><input type='text' placeholder='Enter text...'></div>
+                <div class='row' id='AA00AA'><input type='checkbox'><span style='background-color: #AA00AA;' class='colored-span'></span><pre>#AA00AA</pre><input type='text' placeholder='Enter text...'></div>
+                <div class='row' id='FF00FF'><input type='checkbox'><span style='background-color: #FF00FF;' class='colored-span'></span><pre>#FF00FF</pre><input type='text' placeholder='Enter text...'></div>
+                <div class='row' id='FF55FF'><input type='checkbox'><span style='background-color: #FF55FF;' class='colored-span'></span><pre>#FF55FF</pre><input type='text' placeholder='Enter text...'></div>
+                <div class='row' id='FFAAFF'><input type='checkbox'><span style='background-color: #FFAAFF;' class='colored-span'></span><pre>#FFAAFF</pre><input type='text' placeholder='Enter text...'></div>
+
+                <div class='row' id='0000FF'><span style='background-color: #0000FF; padding: 0.25rem 3rem;' class='colored-span'></span><pre>#0000FF</pre></div>
+                <div class='row' id='000055'><input type='checkbox'><span style='background-color: #000055;' class='colored-span'></span><pre>#000055</pre><input type='text' placeholder='Enter text...'></div>
+                <div class='row' id='0000AA'><input type='checkbox'><span style='background-color: #0000AA;' class='colored-span'></span><pre>#0000AA</pre><input type='text' placeholder='Enter text...'></div>
+                <div class='row' id='0000FF'><input type='checkbox'><span style='background-color: #0000FF;' class='colored-span'></span><pre>#0000FF</pre><input type='text' placeholder='Enter text...'></div>
+                <div class='row' id='5555FF'><input type='checkbox'><span style='background-color: #5555FF;' class='colored-span'></span><pre>#5555FF</pre><input type='text' placeholder='Enter text...'></div>
+                <div class='row' id='AAAAFF'><input type='checkbox'><span style='background-color: #AAAAFF;' class='colored-span'></span><pre>#AAAAFF</pre><input type='text' placeholder='Enter text...'></div>
+
+                <div class='row' id='FFFF00'><span style='background-color: #FFFF00; padding: 0.25rem 3rem;' class='colored-span'></span><pre>#FFFF00</pre></div>
+                <div class='row' id='555500'><input type='checkbox'><span style='background-color: #555500;' class='colored-span'></span><pre>#555500</pre><input type='text' placeholder='Enter text...'></div>
+                <div class='row' id='AAAA00'><input type='checkbox'><span style='background-color: #AAAA00;' class='colored-span'></span><pre>#AAAA00</pre><input type='text' placeholder='Enter text...'></div>
+                <div class='row' id='FFFF00'><input type='checkbox'><span style='background-color: #FFFF00;' class='colored-span'></span><pre>#FFFF00</pre><input type='text' placeholder='Enter text...'></div>
+                <div class='row' id='FFFF55'><input type='checkbox'><span style='background-color: #FFFF55;' class='colored-span'></span><pre>#FFFF55</pre><input type='text' placeholder='Enter text...'></div>
+                <div class='row' id='FFFFAA'><input type='checkbox'><span style='background-color: #FFFFAA;' class='colored-span'></span><pre>#FFFFAA</pre><input type='text' placeholder='Enter text...'></div>
+
+            </div>
+
+            <div class="content-col">
+                <span></span> <!-- for a pinch of vertical spacing -->
+
+                <div class='row' id='AA5555'><span style='background-color: #AA5555; padding: 0.25rem 3rem;' class='colored-span'></span><pre>#AA5555</pre></div>
+                <div class='row' id='3A1D1D'><input type='checkbox'><span style='background-color: #3A1D1D;' class='colored-span'></span><pre>#3A1D1D</pre><input type='text' placeholder='Enter text...'></div>
+                <div class='row' id='723939'><input type='checkbox'><span style='background-color: #723939;' class='colored-span'></span><pre>#723939</pre><input type='text' placeholder='Enter text...'></div>
+                <div class='row' id='AA5555'><input type='checkbox'><span style='background-color: #AA5555;' class='colored-span'></span><pre>#AA5555</pre><input type='text' placeholder='Enter text...'></div>
+                <div class='row' id='C68D8D'><input type='checkbox'><span style='background-color: #C68D8D;' class='colored-span'></span><pre>#C68D8D</pre><input type='text' placeholder='Enter text...'></div>
+                <div class='row' id='E2C5C5'><input type='checkbox'><span style='background-color: #E2C5C5;' class='colored-span'></span><pre>#E2C5C5</pre><input type='text' placeholder='Enter text...'></div>
+
+                <div class='row' id='55AAAA'><span style='background-color: #55AAAA; padding: 0.25rem 3rem;' class='colored-span'></span><pre>#55AAAA</pre></div>
+                <div class='row' id='1D3A3A'><input type='checkbox'><span style='background-color: #1D3A3A;' class='colored-span'></span><pre>#1D3A3A</pre><input type='text' placeholder='Enter text...'></div>
+                <div class='row' id='397272'><input type='checkbox'><span style='background-color: #397272;' class='colored-span'></span><pre>#397272</pre><input type='text' placeholder='Enter text...'></div>
+                <div class='row' id='55AAAA'><input type='checkbox'><span style='background-color: #55AAAA;' class='colored-span'></span><pre>#55AAAA</pre><input type='text' placeholder='Enter text...'></div>
+                <div class='row' id='8DC6C6'><input type='checkbox'><span style='background-color: #8DC6C6;' class='colored-span'></span><pre>#8DC6C6</pre><input type='text' placeholder='Enter text...'></div>
+                <div class='row' id='C5E2E2'><input type='checkbox'><span style='background-color: #C5E2E2;' class='colored-span'></span><pre>#C5E2E2</pre><input type='text' placeholder='Enter text...'></div>
+
+                <div class='row' id='55AA55'><span style='background-color: #55AA55; padding: 0.25rem 3rem;' class='colored-span'></span><pre>#55AA55</pre></div>
+                <div class='row' id='1D3A1D'><input type='checkbox'><span style='background-color: #1D3A1D;' class='colored-span'></span><pre>#1D3A1D</pre><input type='text' placeholder='Enter text...'></div>
+                <div class='row' id='397239'><input type='checkbox'><span style='background-color: #397239;' class='colored-span'></span><pre>#397239</pre><input type='text' placeholder='Enter text...'></div>
+                <div class='row' id='55AA55'><input type='checkbox'><span style='background-color: #55AA55;' class='colored-span'></span><pre>#55AA55</pre><input type='text' placeholder='Enter text...'></div>
+                <div class='row' id='8DC68D'><input type='checkbox'><span style='background-color: #8DC68D;' class='colored-span'></span><pre>#8DC68D</pre><input type='text' placeholder='Enter text...'></div>
+                <div class='row' id='C5E2C5'><input type='checkbox'><span style='background-color: #C5E2C5;' class='colored-span'></span><pre>#C5E2C5</pre><input type='text' placeholder='Enter text...'></div>
+
+                <div class='row' id='AA55AA'><span style='background-color: #AA55AA; padding: 0.25rem 3rem;' class='colored-span'></span><pre>#AA55AA</pre></div>
+                <div class='row' id='3A1D3A'><input type='checkbox'><span style='background-color: #3A1D3A;' class='colored-span'></span><pre>#3A1D3A</pre><input type='text' placeholder='Enter text...'></div>
+                <div class='row' id='723972'><input type='checkbox'><span style='background-color: #723972;' class='colored-span'></span><pre>#723972</pre><input type='text' placeholder='Enter text...'></div>
+                <div class='row' id='AA55AA'><input type='checkbox'><span style='background-color: #AA55AA;' class='colored-span'></span><pre>#AA55AA</pre><input type='text' placeholder='Enter text...'></div>
+                <div class='row' id='C68DC6'><input type='checkbox'><span style='background-color: #C68DC6;' class='colored-span'></span><pre>#C68DC6</pre><input type='text' placeholder='Enter text...'></div>
+                <div class='row' id='E2C5E2'><input type='checkbox'><span style='background-color: #E2C5E2;' class='colored-span'></span><pre>#E2C5E2</pre><input type='text' placeholder='Enter text...'></div>
+
+                <div class='row' id='5555AA'><span style='background-color: #5555AA; padding: 0.25rem 3rem;' class='colored-span'></span><pre>#5555AA</pre></div>
+                <div class='row' id='1D1D3A'><input type='checkbox'><span style='background-color: #1D1D3A;' class='colored-span'></span><pre>#1D1D3A</pre><input type='text' placeholder='Enter text...'></div>
+                <div class='row' id='393972'><input type='checkbox'><span style='background-color: #393972;' class='colored-span'></span><pre>#393972</pre><input type='text' placeholder='Enter text...'></div>
+                <div class='row' id='5555AA'><input type='checkbox'><span style='background-color: #5555AA;' class='colored-span'></span><pre>#5555AA</pre><input type='text' placeholder='Enter text...'></div>
+                <div class='row' id='8D8DC6'><input type='checkbox'><span style='background-color: #8D8DC6;' class='colored-span'></span><pre>#8D8DC6</pre><input type='text' placeholder='Enter text...'></div>
+                <div class='row' id='C5C5E2'><input type='checkbox'><span style='background-color: #C5C5E2;' class='colored-span'></span><pre>#C5C5E2</pre><input type='text' placeholder='Enter text...'></div>
+
+                <div class='row' id='AAAA55'><span style='background-color: #AAAA55; padding: 0.25rem 3rem;' class='colored-span'></span><pre>#AAAA55</pre></div>
+                <div class='row' id='3A3A1D'><input type='checkbox'><span style='background-color: #3A3A1D;' class='colored-span'></span><pre>#3A3A1D</pre><input type='text' placeholder='Enter text...'></div>
+                <div class='row' id='727239'><input type='checkbox'><span style='background-color: #727239;' class='colored-span'></span><pre>#727239</pre><input type='text' placeholder='Enter text...'></div>
+                <div class='row' id='AAAA55'><input type='checkbox'><span style='background-color: #AAAA55;' class='colored-span'></span><pre>#AAAA55</pre><input type='text' placeholder='Enter text...'></div>
+                <div class='row' id='C6C68D'><input type='checkbox'><span style='background-color: #C6C68D;' class='colored-span'></span><pre>#C6C68D</pre><input type='text' placeholder='Enter text...'></div>
+                <div class='row' id='E2E2C5'><input type='checkbox'><span style='background-color: #E2E2C5;' class='colored-span'></span><pre>#E2E2C5</pre><input type='text' placeholder='Enter text...'></div>
+
+            </div>
+
+        </div>
+
+    </body>
+
+</html>
+
+
+<!-- 
+https://coolors.co/FF0000-00FFFF-00FF00-FF00FF-0000FF-FFFF00-808080
+https://coolors.co/AA5555-55AAAA-55AA55-AA55AA-5555AA-AAAA55-808080
+https://coolors.co/707070-808080
+-->
